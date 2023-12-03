@@ -1,0 +1,14 @@
+﻿
+<table class="tabel border hover">
+@foreach(Product item in Model)
+{
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+        <td>@item.Price</td>
+        <td>@item.Description</td>
+        <td ><img src="/image/@item.Image" style="height:50px;width:50px"/></td>
+    </tr>
+
+}
+</table>

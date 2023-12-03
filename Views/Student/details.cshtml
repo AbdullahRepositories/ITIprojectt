@@ -1,0 +1,19 @@
+﻿@model Student
+<select>
+    @foreach (var item in (List<String>)ViewData["branches"])
+   {
+       <option>@item</option>
+   }
+
+
+
+</select>
+<select>
+    @foreach (var item in (List<String>)ViewBag.Branches)
+   {
+       <option>@item</option>
+   }
+
+</select>
+<h1>@ViewData["message"]</h1>
+
